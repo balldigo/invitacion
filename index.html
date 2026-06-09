@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi invitacio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel+Decorative:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas class="petals-canvas" id="petalsCanvas"></canvas>
+
+    <!--SECCION 1 * PORTADA-->
+    <section class="hero">
+        <div class="hero-ornament">✦ ✦ ✦</div>
+        <p class="hero-pre">Mi cumpleaños</p>
+        <h1 class="hero-name">URI JO</h1>
+        <p class="hero-xv">Cumpleaños</p>
+        <div class="hero-divider"><span></span><i>🌷</i><span></span></div>
+    <!--cambia la fecha aqui-->
+    <p class="hero-date">Domingo 05  de Julio de 2026</p>
+    <p class="hero-subtitle">"un dia muy especial"</p>
+    <!--cambia la direcion de la foto-->
+        <div class="hero-photo-wrap">
+        <div class="hero-photo-placeholder">
+            <img class="hero-photo" src="C:\Users\erick\OneDrive\Escritorio\invitacion_new\{fotos,audios}\mifoto.jpg" alt="mifoto"></div>
+    </div>
+</section>
+
+    <!--SECCION 2 * invitacion-->
+    <section class="mensaje">
+        <div class="section-inner reveal">
+            <p class="section-tag">✦ Invitación ✦</p>
+            <h2 class="section-title">Con Amor te Invitamos</h2>
+            <div class="section-line"></div>
+            <p class="mensaje-text">
+                Junto a nuestra familia y amigos más queridos,<br>
+                tenemos el honor de invitarte a celebrar<br>
+                este momento tan especial en la vida de<br><br>
+                <strong style="font-family: 'Cinzel Decorative', cursive;color: var(--gold-dark);font-size: 1.5rem;">URI</strong><br><br>
+                quien cumple sus tan esperados<br>
+                <em style="color:var(--rose-dark);font-size:1.4rem;">37 años</em><br><br>
+                Tu presencia hará este día aún más inolvidable.
+            </p>
+            <p class="mensaje-firma">— Con cariño, la Familia Velazquez Flores —</p>
+        </div>
+    </section>
+
+    <!--SECCION 3 * Contador (edita fecha en js)-->
+    <section class="countdown">
+        <div class="section-inner reveal">
+        <p class="section-tag" style="color:var(--rose);">✦ Faltan ✦</p>
+        <h2 class="section-title">El Gran Día se Acerca</h2>
+        <div class="section-line"></div>
+        <div class="countdown-grid">
+            <div class="cd-box"><span class="cd-num" id="cd-dias">--</span><span class="cd-label">Días</span></div>
+            <div class="cd-box"><span class="cd-num" id="cd-horas">--</span><span class="cd-label">Horas</span></div>
+            <div class="cd-box"><span class="cd-num" id="cd-min">--</span><span class="cd-label">Minutos</span></div>
+            <div class="cd-box"><span class="cd-num" id="cd-seg">--</span><span class="cd-label">Segundos</span></div>
+        </div>
+        </div>
+    </section>
+
+    
+    <!--SECCION 4 * DETALLES DEL EVENTO-->
+    <section class="evento">
+  <div class="section-inner reveal">
+    <p class="section-tag">✦ Detalles ✦</p>
+    <h2 class="section-title">El Evento</h2>
+    <div class="section-line"></div>
+    <div class="evento-grid">
+      <div class="evento-card">
+        <span class="evento-icon">⛪</span>
+        <h3>Lugar</h3>
+        <!-- ✏ Edita nombre, dirección y hora -->
+        <p>[Mi casa]<br>[en mi casa]<br><br><strong>[18:00] hrs</strong></p>
+        <!-- ✏ Pega el link de Google Maps -->
+        <a href="https://maps.google.com" target="_blank">📍 Ver en Mapa</a>
+      </div>
+      <div class="evento-card">
+        <span class="evento-icon">🥂</span>
+        <h3>Recepción</h3>
+        <!-- ✏ Edita nombre, dirección y hora -->
+        <p>[Nombre del Salón]<br>[Dirección completa]<br><br><strong>[Hora] hrs</strong></p>
+        <!-- ✏ Pega el link de Google Maps -->
+        <a href="https://maps.google.com" target="_blank">📍 Ver en Mapa</a>
+      </div>
+      <div class="evento-card">
+        <span class="evento-icon">👗</span>
+        <h3>Vestimenta</h3>
+        <p>Formal / Etiqueta<br><br>Color reservado:<br><em style="color:var(--rose-dark);">Rosa palo</em> para la festejada</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 6 · GALERÍA
+     ✏ Agrega fotos en /fotos/ y reemplaza los div vacíos:
+     <div class="galeria-item"><img src="fotos/foto1.jpg" alt="Nahomi" /></div> -->
+<section class="galeria">
+  <div class="section-inner reveal">
+    <p class="section-tag">✦ Galería ✦</p>
+    <h2 class="section-title">Momentos Especiales</h2>
+    <div class="section-line"></div>
+    <div class="galeria-grid">
+      <div class="galeria-item">🌸</div>
+      <div class="galeria-item">🌷</div>
+      <div class="galeria-item">✨</div>
+      <div class="galeria-item">🌸</div>
+      <div class="galeria-item">💫</div>
+      <div class="galeria-item">🌷</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 7 · CONFIRMACIÓN (✏ edita número WhatsApp en js/main.js) -->
+<section class="confirmacion">
+  <div class="section-inner reveal">
+    <p class="section-tag">✦ Asistencia ✦</p>
+    <h2 class="section-title">Confirma tu Asistencia</h2>
+    <div class="section-line"></div>
+    <form class="confirm-form" onsubmit="enviarConfirmacion(event)">
+      <input  type="text"   id="cf-nombre"   placeholder="Tu nombre completo"  required />
+      <input  type="number" id="cf-personas"  placeholder="Número de personas"  min="1" max="20" />
+      <select id="cf-asiste">
+        <option value="">¿Asistirás?</option>
+        <option value="si">Sí, con gusto asistiré 🎉</option>
+        <option value="no">Lo siento, no podré asistir</option>
+      </select>
+      <button type="submit" class="btn-confirmar">Confirmar Asistencia</button>
+    </form>
+    <p id="confirm-msg" style="margin-top:20px;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-dark);display:none;">
+      ¡Gracias por confirmar! Te esperamos con cariño 🌸
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-name">Uri JO</p>
+  <p class="footer-date">Cumplo Años · 05 de jul de 2026</p>
+  <div class="footer-line"></div>
+  <p class="footer-copy">Hecho con amor ✦ Familia Velazquez Flores</p>
+</footer>
+
+<button class="music-btn" id="musicBtn" title="Música" onclick="toggleMusic()">🎵</button>
+
+<!-- ✏ AUDIO: copia tu canción en /audio/cancion.mp3 y descomenta la línea source -->
+<audio id="bgMusic" loop>
+<source src="cancion.mp3" type="audio/mpeg" />
+</audio>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+</body>
+</html>
